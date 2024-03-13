@@ -9,8 +9,8 @@ try {
         database: process.env.MYSQL_DB
     });
     
-    
     module.exports = connection;
-} catch (error) {
+}
+catch (error) {
     return res.status(500).json({msg: "erro ao conectar com o banco!" });
 };
