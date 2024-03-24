@@ -10,7 +10,7 @@ const validateEmail = async(req, res, next) => {
 
         const [findEmail] = await connection.execute(queryEmail, [email]);
         if(findEmail.length == 1) {
-            return res.status(401).json({msg: "Email ja cadastrado, por favor, utilize outros!"})
+            return res.status(401).json({msg: "Email ja cadastrado, por favor, utilize outro Email!"})
         };
 
         next();
