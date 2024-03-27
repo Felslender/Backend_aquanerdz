@@ -1,6 +1,6 @@
 const teste = async (req, res) => {
     try {
-        // Extrai o valor do corpo da requisição
+        
         const { valor } = req.body;
         console.log(valor);
 
