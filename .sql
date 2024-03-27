@@ -9,7 +9,7 @@ nomeCargo VARCHAR(20)
 INSERT INTO cargos(idCargos, nomeCargo) VALUES (1, 'admin'), (2, 'usuario');
 
 
-CREATE TABLE usuarios(
+CREATE TABLE users(
 id INT not null primary key auto_increment,
 idCargo INT,
 nome varchar(60),
@@ -19,4 +19,4 @@ telefone bigint,
 FOREIGN KEY (idCargo) REFERENCES cargos(idCargos)
 );
 
-INSERT INTO usuarios(idCargo, nome, email, senha, telefone) values (2 ,'felipe', 'auj95094ghjfhga', 'skasjhajhsjah', 14991463513);
+INSERT INTO users(idCargo, nome, email, senha, telefone) values (2 ,'felipe', 'auj95094ghjfhga', 'skasjhajhsjah', 14991463513);
